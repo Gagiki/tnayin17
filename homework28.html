@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTf-8">
+  <head>
+   <title>homework28</title>
+   </head>
+
+  <body>
+    <!--առաջին տարբերակ -->
+         <ul> 
+        <li id="li">Fish</li>
+          <ul>
+            <li id="li">trout</li>
+            <li id="li">salmon</li>
+          </ul>
+        <li id="li">Tree</ii>
+        <ul>
+            <li id="li">Huge</li>
+            <li id="li">sequoia</li>
+            <li id="li">oak</li>
+          </ul>
+        <li id="li">Flowering </ii>
+        <ul>
+            <li id="li">apple tree</li>
+            <li id="li">magnolia</li>
+           
+          </ul>
+      </ul>
+   
+    <script>
+      let data = {
+    "Fish": {
+        "trout": {},
+        "salmon": {}
+    },
+
+    "Tree": {
+        "Huge": {
+            "sequoia": {},
+            "oak": {
+        },
+        "Flowering": {
+            "apple tree": {},
+            "magnolia": {}
+        }
+    }
+}
+      }
+      
+    </script>
+<script>
+function getListContent() {
+  let fragment = new DocumentFragment();
+
+  for(let i=1; i<=li; i++) {
+    let li = document.createElement('li');
+    
+   
+  }
+
+  return fragment;
+}
+
+console.log(getListContent())
+         
+     </script> 
+     <!--2 տարբերակ  -->
+     <ul> 
+        <li id="li">Fish</li>
+          <ul>
+            <li id="li">trout</li>
+            <li id="li">salmon</li>
+          </ul>
+        <li id="li">Tree</ii>
+        <ul>
+            <li id="li">Huge</li>
+            <li id="li">sequoia</li>
+            <li id="li">oak</li>
+          </ul>
+        <li id="li">Flowering </ii>
+        <ul>
+            <li id="li">apple tree</li>
+            <li id="li">magnolia</li>
+           
+          </ul>
+      </ul>
+    </script>
+         <script>
+      let data1 = {
+    "Fish": {
+        "trout": {},
+        "salmon": {}
+    },
+
+    "Tree": {
+        "Huge": {
+            "sequoia": {},
+            "oak": {
+        },
+        "Flowering": {
+            "apple tree": {},
+            "magnolia": {}
+        }
+    }
+}
+      }
+      
+        let elements = document.querySelectorAll('ul > li');
+     
+        for (let elem of elements) {
+          alert(elem.innerHTML); 
+        }
+      </script>
+    
+  
+  </body>
+</html>
